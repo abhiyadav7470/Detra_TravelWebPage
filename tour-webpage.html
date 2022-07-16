@@ -4,85 +4,148 @@
         <title>
             Home
         </title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
         <style>
-            div{
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.2em;
+            }
+
+            h1{
+                font: italic small-caps bold 40px 'Arial Black';
+            }
+
+            h4{
+                text-transform: capitalize;
+            }
+
+            .cityheading{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 2vw;
+                text-decoration: underline #ff0000 wavy;
+            }
+
+            .seasonheading{
+                font-family: cursive;
+                font-size: 160%;
+                font-style: italic;
+                color: #132c9e;
+            }
+            .container{
                 border: 4px solid red;
                 margin: 4px;
+                font-weight: bold;
             }
+
+            .city{
+                border: 3px dotted blue;
+                margin: 10px;
+            }
+
+            .season{
+                border: 3px inset violet;
+                margin: 8px;
+                font-weight: lighter;
+            }
+
+            .seasonPara{
+                /*text-indent: 50px;
+                letter-spacing: 3px;
+                white-space: pre;
+                line-height: 1.8;*/
+                word-spacing: 30px;
+                text-shadow: 1px 1px 4px #000000;
+            }
+
+            .temp{
+                font-weight: bold;
+                color: green;
+            }
+
+            #winter{
+                margin: 12px;
+                border: 9px ridge red;
+            }
+
         </style>
     </head>
     <body>
         <h1>Welcome to India Tourism</h1>
 
-        <div id="populardestination">
+        <div id="populardestination" class="container">
             <h2>Popular Destination</h2>
             
-            <div id="goa">
-                <h3>GOA</h3>
+            <div id="goa" class="city">
+                <h3 class="cityheading"><span class="material-icons">location_city</span>Goa</h3>
                 <h4>Things to do </h4>
                 <h5>First one</h5>
-                <h6>About First one </h6>
+                <p>About First one </p>
                 <h5>Second one</h5>
-                <h6>About Second one </h6>
+                <p>About Second one </p>
         
                 <h4>Day Plans</h4>
                 <h5>First one</h5>
-                <h6>About First one </h6>
+                <p>About First one </p>
                 <h5>Second one</h5>
-                <h6>About Second one </h6>
+                <p>About Second one </p>
                 <hr>
         
                 </div>
         
-                <div id="kochi">
-                    <h3>KOCHI</h3>
+                <div id="kochi" class="city">
+                    <h3 class="cityheading"><span class="material-icons">location_city</span>KOCHI</h3>
                     <h4>Things to do </h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
             
                     <h4>Day Plans</h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
                     <hr>
         
                 </div>
         
-                <div id="varanasi">
-                    <h3>VARANASI</h3>
+                <div id="varanasi" class="city">
+                    <h3 class="cityheading"><span class="material-icons">location_city</span>VARANASI</h3>
                     <h4>Things to do </h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
             
             
                     <h4>Day Plans</h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
                     <hr>
         
                 </div>
         
-                <div id="sriNagar">
-                    <h3>SRI NAGAR </h3>
+                <div id="sriNagar" class="city">
+                    <h3 class="cityheading"><span class="material-icons">location_city</span>SRI NAGAR </h3>
         
                     <h4>Things to do </h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
             
                     <h4>Day Plans</h4>
                     <h5>First one</h5>
-                    <h6>About First one </h6>
+                    <p>About First one </p>
                     <h5>Second one</h5>
-                    <h6>About Second one </h6>
+                    <p>About Second one </p>
                     <hr>
         
 
@@ -93,52 +156,41 @@
 
        
 
-        <div id="indianClimate">
+        <div id="indianClimate" class="container">
             <h2>Indian Climate</h2>
 
-            <div id="summer">
-                <h3>Summer</h3>
-                <p>
-                    During the three months from April to June it is most parts of Imdia . Generally in the months of April , many parts of India experiences high temperature .The normal temperature recorded in this time in generally 30 degree Celcius . But at some places in the plateau region the temperature rises to 40 degree celcius and in the himalayan mountain region , it remains near about 20 degree celcius .
+            <div id="summer" class="season">
+                <h3 class="seasonheading"><span class="fa fa-sun"></span>Summer</h3>
+                <p class="seasonPara">
+                    During the three months from April to June it is most parts of Imdia . Generally in the months of April , many parts of India experiences high <span class="temp">temperature</span> .The normal <span class="temp">temperature</span> recorded in this time in generally 30 degree Celcius . But at some places in the plateau region the <span class="temp">temperature</span> rises to 40 degree celcius and in the himalayan mountain region , it remains near about 20 degree celcius .
                 </p>
     
             </div>
     
-            <div id="winter">
-                <h3>Winter</h3>
-                <p>
+            <div id="winter" class="season">
+                <h3 class="seasonheading"><span class="fa fa-cloud"></span>Winter</h3>
+                <p class="seasonPara">
                     During the period from December to february there is winter season in india . During this time clouds and dry North-East Monson passses over different regions of India and temperature is decreased considerably . In Himalayan area the temperature is much lower (between 5 degree celcius and 10 degree celcius). But sometimes cyclone (coming from the West ) causes strom and rainfall which is known as western disturbance .
                 </p>
     
             </div>
     
-            <div id="rainy">
-                <h3>Rainy</h3>
-                <P>
+            <div id="rainy" class="season">
+                <h3 class="seasonheading"><span class="fa fa-cloud-rain"></span>Rainy</h3>
+                <P class="seasonPara">
                     The rainy season in India begins generally from the second week of July and continues upto the second week of October . From the Second week of June humid monsoon enters various parts of India and causes rainfall everywhere in the state .
                 </P>
     
             </div>
     
-            <div id="spring">
-                <h3>Spring</h3>
-                <p>
+            <div id="spring" class="season">
+                <h3 class="seasonheading"><span class="fa fa-cloud-sun"></span>Spring</h3>
+                <p class="seasonPara">
                   The advent of spring brings us the pleasent sound wind begins to blow . It refreshes our body and mind . The countryside appears to be adorned with green leaves and flowers . Bride sing and bees hum in the flower garden . Trees and creepers are coverd with beautiful flowers . Bees hum all day long among them
                 </p>
     
             </div>
     
-    
-
         </div>
-
-
-
-
-
-
-
-
-
     </body>
 </html>
