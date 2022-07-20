@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#navBar {
+    background-color: rgb(46, 255, 46);
+    height: 60px;
+}
+
+#navBar .navBrand {
+    width: 20%;
+    padding-top: 16px;
+    padding-left: 15px;
+    float: left;
+    color: rgba(127, 127, 127, 0.816);
+    font-weight: bold;
+}
+
+#navBar .nav {
+    width: 80%;
+    float: left;
+}
+
+#navBar .nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+#navBar .nav ul li {
+    float: left;
+    text-decoration: none;
+}
+
+#navBar .nav ul li a:link,
+#navBar .nav ul li a:visited {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
+
+#navBar .nav ul li a:hover {
+    background-color: rgb(3, 104, 3);
+}
