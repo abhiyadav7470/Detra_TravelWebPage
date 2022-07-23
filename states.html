@@ -22,51 +22,22 @@
         }
         
         .state {
-            background-image: linear-gradient(red, blue, green);
             margin: 25px 10px 15px 40px;
             padding: 10px 20px 15px 30px;
-            width: 350px;
-            height: 100px;
+            font-size: 22px;
+            width: 420px;
+            height: 150px;
             float: left;
             border: 8px solid #0d9f05;
             border-radius: 6px 15px 20px 10px;
-            box-shadow: 10px 20px 10px 5px rgb(94, 94, 255);
-            /*transition: background-color 2s, transform 2s;*/
-        }
-        
-        @keyframes myanimation {
-            0% {
-                background-color: #78f974;
-                transform: rotate(0deg) scale(1);
-            }
-            25% {
-                background-color: aqua;
-                transform: rotate(-90deg) scale(1.2);
-            }
-            50% {
-                background-color: lightcoral;
-                transform: rotate(90deg) scale(1.5);
-            }
-            75% {
-                background-color: lightseagreen;
-                transform: rotate(0deg) scale(1.5);
-            }
-            100% {
-                background-color: #0d9f05;
-                transform: rotate(0deg);
-            }
+            background-image: url("Images/place.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .state:active {
-            /*background-color: #25fd19;
-                transform: rotate(40deg);*/
-            animation: myanimation 10s;
-        }
-        
-        #kerala-state {
-            clear: left;
-            /*outline: 4px dashed blue;
-                outline-offset: 4px;*/
+            background-color: #25fd19;
+            font-size: 40px;
         }
         
         #navBar {
@@ -126,6 +97,7 @@
                 <li><a href="tour-webpage.html">Home</a></li>
                 <li><a href="states.html">States</a></li>
                 <li><a href="destination.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </div>
     </div>

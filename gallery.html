@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link href="Style.css" rel="stylesheet">
+</head>
+<style>
+    .photo-container {
+        border: 1px solid black;
+        width: 95%;
+        padding: 10px;
+        height: 500px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .photo {
+        float: left;
+        margin: 10px;
+        cursor: pointer;
+        transition: transform 0.5s;
+        width: 250px;
+        height: 180px;
+    }
+    
+    .photo:hover {
+        transform: scale(1.1);
+    }
+    
+    .photo-caption {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    
+    .photo img {
+        box-shadow: 0px 0px 2px 2px rgb(30, 30, 30);
+        border: 3px ridge rgb(70, 70, 70);
+    }
+    
+    #photo1 {
+        background-image: url("Images/bagaBeach.jpeg");
+    }
+    
+    #photo2 {
+        background-image: url("Images/gadisisarLake.jpeg");
+    }
+    
+    #photo3 {
+        background-image: url("Images/yusmarg.jpeg");
+    }
+</style>
+
+<body>
+    <!--NavBar Start Here-->
+    <div id="navBar">
+        <div class="navBrand">India Tourism</div>
+        <div class="nav">
+            <ul>
+                <li><a href="tour-webpage.html">Home</a></li>
+                <li><a href="states.html">States</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--NavBar Ends Here-->
+
+    <div class="photo-container">
+        <div class="photo" id="photo1">
+            <div class="photo-caption">Baga Beach</div>
+        </div>
+
+        <div class="photo" id="photo2">
+            <div class="photo-caption">Gadisisar Lake</div>
+        </div>
+
+        <div class="photo" id="photo3">
+            <div class="photo-caption">Munnar</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
