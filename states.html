@@ -15,6 +15,10 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("Images/banner.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         
         * {
@@ -26,13 +30,17 @@
             padding: 10px 20px 15px 30px;
             font-size: 22px;
             width: 420px;
-            height: 150px;
+            height: 170px;
             float: left;
-            border: 8px solid #0d9f05;
+            border: 8px dotted #0d9f05;
             border-radius: 6px 15px 20px 10px;
-            background-image: url("Images/place.png");
+            /*background-image: url("Images/place.png");
             background-repeat: no-repeat;
             background-size: cover;
+              background: url("Images/place.png") left top no-repeat, url("Images/sample.png") right bottom no-repeat;*/
+            background-color: red;
+            background-clip: border-box;
+            border-image: url("Images/border.png") 30% round;
         }
         
         .state:active {
