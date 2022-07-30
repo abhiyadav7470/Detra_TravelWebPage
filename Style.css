@@ -145,3 +145,120 @@ body {
 .pagination ul li a:hover {
     background-color: rgb(59, 227, 227);
 }
+
+
+/*card style*/
+
+.card-container {
+    clear: both;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 2px 2px 3px 3px rgb(116, 115, 115);
+    margin: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.card-head {
+    color: white;
+    background-color: rgb(145, 145, 145);
+    padding: 10px 18px;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-body h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-body ul li {
+    border-bottom: 1px solid rgb(87, 87, 87);
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.card-body ul li:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.card-footer {
+    background-color: rgb(180, 180, 180);
+    text-align: right;
+    padding: 12px;
+}
+
+
+/* SignUp card*/
+
+.signup-card {
+    margin: auto;
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.form-element {
+    height: 50px;
+}
+
+.form-label {
+    width: 30%;
+    float: left;
+    font-size: 17px;
+}
+
+.form-control-container {
+    width: 70%;
+    float: left;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    border: 1px solid rgb(96, 147, 223);
+    transition: box-shadow 0.3s;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 3px 2px rgb(100, 149, 249);
+    outline: none;
+}
+
+.btn {
+    background-color: rgb(75, 156, 255);
+    color: white;
+    padding: 5px 18px;
+    box-shadow: 0px 0px 2px 2px rgb(128, 128, 128);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: 1px solid rgb(220, 220, 220);
+    margin: 3px 6px;
+}
+
+.btn:hover {
+    background-color: rgb(110, 110, 255);
+    box-shadow: 0px 0px 3px 3px rgb(118, 118, 118);
+}
+
+.reset-button {
+    background-color: rgb(255, 98, 98);
+}
+
+.reset-button:hover {
+    background-color: rgb(255, 39, 39);
+}
