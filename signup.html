@@ -29,55 +29,55 @@
             <div class="card-body">
                 <div class="form-element">
                     <div class="form-label"><label for="email">Email:</label></div>
-                    <div class="form-control-container"><input type="email" id="email" class="form-control"></div>
+                    <div class="form-control-container"><input type="email" name="email" id="email" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="password">Password:</label></div>
-                    <div class="form-control-container"><input type="password" id="password" class="form-control"></div>
+                    <div class="form-control-container"><input type="password" name="password" id="password" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="text">City:</label></div>
-                    <div class="form-control-container"><input type="text" id="text" class="form-control"></div>
+                    <div class="form-control-container"><input type="text" name="city" id="text" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="color">Favourite Color:</label></div>
-                    <div class="form-control-container"><input type="color" id="color" class="form-control"></div>
+                    <div class="form-control-container"><input type="color" name="favouritecolor" id="color" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="date">Date of Birth:</label></div>
-                    <div class="form-control-container"><input type="date" id="date" class="form-control"></div>
+                    <div class="form-control-container"><input type="date" name="dateofbirth" id="date" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="date-time">Date and Time of the journey:</label></div>
-                    <div class="form-control-container"><input type="datetime-local" id="date-time" class="form-control"></div>
+                    <div class="form-control-container"><input type="datetime-local" name="dateandtimeofjourney" id="date-time" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="time">Time of Journey:</label></div>
-                    <div class="form-control-container"><input type="time" id="time" class="form-control"></div>
+                    <div class="form-control-container"><input type="time" name="timeofjourney" id="time" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="month">Month of Journey:</label></div>
-                    <div class="form-control-container"><input type="month" id="month" class="form-control"></div>
+                    <div class="form-control-container"><input type="month" name="monthofjourney" id="month" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="week">Week of Journey:</label></div>
-                    <div class="form-control-container"><input type="week" id="week" class="form-control"></div>
+                    <div class="form-control-container"><input type="week" name="weekofjourney" id="week" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="file">Profile Picture:</label></div>
-                    <div class="form-control-container"><input type="file" id="file" class="form-control"></div>
+                    <div class="form-control-container"><input type="file" name="profilepicture" id="file" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="portfolio">Portfolio Url:</label></div>
-                    <div class="form-control-container"><input type="url" id="portfolio" class="form-control"></div>
+                    <div class="form-control-container"><input type="url" name="portfoliourl" id="portfolio" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="number">Year of Experience:</label></div>
-                    <div class="form-control-container"><input type="number" id="number" class="form-control"></div>
+                    <div class="form-label"><label for="amount">Amount:</label></div>
+                    <div class="form-control-container"><input type="number" name="amount" id="amount" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="range">Website Rating:</label></div>
-                    <div class="form-control-container"><input type="range" min="1" max="5" id="range" class="form-control"></div>
+                    <div class="form-control-container"><input type="range" name="websiterating" min="1" max="5" id="range" class="form-control"></div>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="radio">Gender:</label></div>
@@ -90,9 +90,18 @@
                         <label for="others">Others</label>
                     </div>
                 </div>
+                <div class="form-element">
+                    <div class="form-label">&nbsp;</div>
+                    <div class="form-control-container">
+                        <input type="checkbox" name="recivesnewsletters" id="recivesnewsletters">
+                        <label for="recivesnewsletters">Recives News Letters</label>
+                    </div>
+
+                </div>
 
             </div>
             <div class="card-footer">
+                <input type="hidden" name="usertype" value="costumer">
                 <button class="btn">OK</button>
                 <input type="reset" class="btn reset-button" value="Clear">
             </div>
