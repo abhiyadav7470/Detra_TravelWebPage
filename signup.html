@@ -28,59 +28,60 @@
             <div class="card-head">Sign Up</div>
             <div class="card-body">
                 <div class="form-element">
-                    <div class="form-label"><label for="email">Email:</label></div>
-                    <div class="form-control-container"><input type="email" name="email" id="email" class="form-control" autocomplete="off" autofocus="autofocus"></div>
+                    <div class="form-label"><label for="email">Email*</label></div>
+                    <div class="form-control-container"><input type="email" name="email" id="email" class="form-control" autocomplete="off" autofocus="autofocus" placeholder="Enter Your Email" required="required" maxlength="25"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="password">Password:</label></div>
-                    <div class="form-control-container"><input type="password" name="password" id="password" class="form-control"></div>
+                    <div class="form-label"><label for="password">Password*</label></div>
+                    <div class="form-control-container"><input type="password" name="password" id="password" class="form-control" placeholder="Use 6 to 15 characters, with at least one upercase, one lowercase letter and one digit" required="required" maxlength="15" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})"
+                            title="Password should be between 6 to 15 characters, with at least one upercase letter, one lowercase letter and one digit "></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="text">City:</label></div>
-                    <div class="form-control-container"><input type="text" name="city" id="text" class="form-control" value="New york" readonly="readonly"></div>
+                    <div class="form-label"><label for="text">City</label></div>
+                    <div class="form-control-container"><input type="text" name="city" id="text" class="form-control" readonly="readonly" maxlength="20"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="color">Favourite Color:</label></div>
+                    <div class="form-label"><label for="color">Favourite Color</label></div>
                     <div class="form-control-container"><input type="color" name="favouritecolor" id="color" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="date">Date of Birth:</label></div>
-                    <div class="form-control-container"><input type="date" name="dateofbirth" id="date" class="form-control"></div>
+                    <div class="form-label"><label for="date">Date of Birth*</label></div>
+                    <div class="form-control-container"><input type="date" name="dateofbirth" id="date" class="form-control" required="required"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="date-time">Date and Time of the journey:</label></div>
+                    <div class="form-label"><label for="date-time">Date and Time of the journey</label></div>
                     <div class="form-control-container"><input type="datetime-local" name="dateandtimeofjourney" id="date-time" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="time">Time of Journey:</label></div>
+                    <div class="form-label"><label for="time">Time of Journey</label></div>
                     <div class="form-control-container"><input type="time" name="timeofjourney" id="time" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="month">Month of Journey:</label></div>
+                    <div class="form-label"><label for="month">Month of Journey</label></div>
                     <div class="form-control-container"><input type="month" name="monthofjourney" id="month" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="week">Week of Journey:</label></div>
+                    <div class="form-label"><label for="week">Week of Journey</label></div>
                     <div class="form-control-container"><input type="week" name="weekofjourney" id="week" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="file">Profile Picture:</label></div>
+                    <div class="form-label"><label for="file">Profile Picture</label></div>
                     <div class="form-control-container"><input type="file" name="profilepicture" id="file" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="portfolio">Portfolio Url:</label></div>
-                    <div class="form-control-container"><input type="url" name="portfoliourl" id="portfolio" class="form-control"></div>
+                    <div class="form-label"><label for="portfolio">Portfolio Url</label></div>
+                    <div class="form-control-container"><input type="url" name="portfoliourl" id="portfolio" class="form-control" placeholder="Please Enter Valid URL"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="amount">Amount:</label></div>
-                    <div class="form-control-container"><input type="number" name="amount" id="amount" class="form-control"></div>
+                    <div class="form-label"><label for="amount">Amount</label></div>
+                    <div class="form-control-container"><input type="number" name="amount" id="amount" class="form-control" placeholder="Please Enter Amount in Between 500 - 10000" step="100" min="500" max="10000"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="range">Website Rating:</label></div>
+                    <div class="form-label"><label for="range">Website Rating</label></div>
                     <div class="form-control-container"><input type="range" name="websiterating" min="1" max="5" id="range" class="form-control"></div>
                 </div>
                 <div class="form-element">
-                    <div class="form-label"><label for="radio">Gender:</label></div>
+                    <div class="form-label"><label for="radio">Gender</label></div>
                     <div class="form-control-container">
                         <input type="radio" name="gender" value="Male" id="male">
                         <label for="male">Male</label>
