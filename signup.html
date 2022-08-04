@@ -23,7 +23,7 @@
     </div>
     <!--NavBar Ends Here-->
 
-    <form>
+    <form action="http://postman-echo.com/get" method="get" target="myiframe">
         <div class="card signup-card">
             <div class="card-head">Sign Up</div>
             <div class="card-body">
@@ -31,6 +31,7 @@
                     <div class="form-label"><label for="email">Email*</label></div>
                     <div class="form-control-container"><input type="email" name="email" id="email" class="form-control" autocomplete="off" autofocus="autofocus" placeholder="Enter Your Email" required="required" maxlength="25"></div>
                 </div>
+
                 <div class="form-element">
                     <div class="form-label"><label for="password">Password*</label></div>
                     <div class="form-control-container"><input type="password" name="password" id="password" class="form-control" placeholder="Use 6 to 15 characters, with at least one upercase, one lowercase letter and one digit" required="required" maxlength="15" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15})"
@@ -38,7 +39,19 @@
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="text">City</label></div>
-                    <div class="form-control-container"><input type="text" name="city" id="text" class="form-control" readonly="readonly" maxlength="20"></div>
+                    <div class="form-control-container"><input type="text" name="city" id="text" class="form-control" maxlength="20" list="cityDatalist"></div>
+                    <datalist id="cityDatalist">
+                        <option value="Hydrabad"></option>
+                        <option value="Delhi"></option>
+                        <option value="Vadodara"></option>
+                        <option value="Vidhskspatnam"></option>
+                        <option value="Kolkata"></option>
+                        <option value="Kerala"></option>
+                        <option value="Ahamdabad"></option>
+                        <option value="Surat"></option>
+                        <option value="Manali"></option>
+                        <option value="Benglure"></option>
+                    </datalist>
                 </div>
                 <div class="form-element">
                     <div class="form-label"><label for="color">Favourite Color</label></div>
@@ -99,11 +112,37 @@
                     </div>
 
                 </div>
+                <div class="form-element">
+                    <div class="form-label"> <label for="address">Address</label></div>
+                    <div class="form-control-container">
+                        <textarea name="address" id="address" class="form-control" cols="50" rows="3" placeholder="Address"></textarea>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <div class="form-label"> <label for="country">Country</label></div>
+                    <div class="form-control-container">
+                        <select name="country" id="country" class="form-control" required="required">
+                            <option value="">Please Select</option>
+                            <option value="africa">Africa</option>
+                            <option value="australia">Australia</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="china">China</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="finland">Finland</option>
+                            <option value="india">India</option>
+                            <option value="iran">Iran</option>
+                            <option value="romainia">Romania</option>
+                            <option value="russia">Russia</option>
+                            <option value="unitedstates">United States of America</option>
+                        </select>
+                    </div>
+                </div>
 
             </div>
             <div class="card-footer">
                 <input type="hidden" name="usertype" value="costumer">
-                <button class="btn">Submit</button>
+                <button class="btn">Register</button>
                 <input type="reset" class="btn reset-button" value="Clear" disabled="disabled">
                 <!--<input type="image" src="images/ok.png" width="20px">-->
             </div>
@@ -111,6 +150,7 @@
 
 
     </form>
+    <iframe name="myiframe" width="100%" height="400px"></iframe>
 </body>
 
 </html>
