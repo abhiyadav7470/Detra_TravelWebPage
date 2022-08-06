@@ -61,22 +61,27 @@
                     <div class="form-label"><label for="date">Date of Birth*</label></div>
                     <div class="form-control-container"><input type="date" name="dateofbirth" id="date" class="form-control" required="required"></div>
                 </div>
-                <div class="form-element">
-                    <div class="form-label"><label for="date-time">Date and Time of the journey</label></div>
-                    <div class="form-control-container"><input type="datetime-local" name="dateandtimeofjourney" id="date-time" class="form-control"></div>
-                </div>
-                <div class="form-element">
-                    <div class="form-label"><label for="time">Time of Journey</label></div>
-                    <div class="form-control-container"><input type="time" name="timeofjourney" id="time" class="form-control"></div>
-                </div>
-                <div class="form-element">
-                    <div class="form-label"><label for="month">Month of Journey</label></div>
-                    <div class="form-control-container"><input type="month" name="monthofjourney" id="month" class="form-control"></div>
-                </div>
-                <div class="form-element">
-                    <div class="form-label"><label for="week">Week of Journey</label></div>
-                    <div class="form-control-container"><input type="week" name="weekofjourney" id="week" class="form-control"></div>
-                </div>
+
+                <fieldset>
+                    <legend>Journey Details</legend>
+                    <div class="form-element">
+                        <div class="form-label"><label for="date-time">Date and Time of the journey</label></div>
+                        <div class="form-control-container"><input type="datetime-local" name="dateandtimeofjourney" id="date-time" class="form-control"></div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label"><label for="time">Time of Journey</label></div>
+                        <div class="form-control-container"><input type="time" name="timeofjourney" id="time" class="form-control"></div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label"><label for="month">Month of Journey</label></div>
+                        <div class="form-control-container"><input type="month" name="monthofjourney" id="month" class="form-control"></div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label"><label for="week">Week of Journey</label></div>
+                        <div class="form-control-container"><input type="week" name="weekofjourney" id="week" class="form-control"></div>
+                    </div>
+                </fieldset>
+
                 <div class="form-element">
                     <div class="form-label"><label for="file">Profile Picture</label></div>
                     <div class="form-control-container"><input type="file" name="profilepicture" id="file" class="form-control"></div>
@@ -123,19 +128,33 @@
                     <div class="form-control-container">
                         <select name="country" id="country" class="form-control" required="required">
                             <option value="">Please Select</option>
-                            <option value="africa">Africa</option>
-                            <option value="australia">Australia</option>
-                            <option value="brazil">Brazil</option>
-                            <option value="bangladesh">Bangladesh</option>
-                            <option value="china">China</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="finland">Finland</option>
-                            <option value="india">India</option>
-                            <option value="iran">Iran</option>
-                            <option value="romainia">Romania</option>
-                            <option value="russia">Russia</option>
-                            <option value="unitedstates">United States of America</option>
-                        </select>
+                            <optgroup label="A">
+                                <option value="africa">Africa</option>
+                                <option value="australia">Australia</option>
+                            </optgroup>
+                            <optgroup label="B">
+                                <option value="brazil">Brazil</option>
+                                <option value="bangladesh">Bangladesh</option>
+                            </optgroup>
+                            <optgroup label="C">
+                                <option value="china">China</option>
+                                <option value="colombia">Colombia</option>
+                            </optgroup>
+                            <optgroup label="F">
+                                <option value="finland">Finland</option>
+                            </optgroup>
+                            <optgroup label="I">
+                                <option value="india">India</option>
+                                <option value="iran">Iran</option>
+                            </optgroup>
+                            <optgroup label="R">
+                                <option value="romainia">Romania</option>
+                                <option value="russia">Russia</option>
+                            </optgroup>
+                            <optgroup label="U">
+                                <option value="unitedstates">United States of America</option>
+                            </optgroup>
+                         </select>
                     </div>
                 </div>
 
