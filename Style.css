@@ -9,8 +9,12 @@ body {
     box-sizing: border-box;
 }
 
+:root {
+    --header-color: rgb(19, 201, 149);
+}
+
 #navBar {
-    background-color: rgb(46, 255, 46);
+    background-color: var(--header-color);
     height: 60px;
 }
 
@@ -165,7 +169,7 @@ body {
 
 .card-head {
     color: white;
-    background-color: rgb(145, 145, 145);
+    background-color: var(--header-color);
     padding: 10px 18px;
 }
 
