@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-    --header-color: rgb(19, 201, 149);
+    --header-color: rgb(103, 12, 145);
 }
 
 #navBar {
@@ -23,7 +23,7 @@ body {
     padding-top: 16px;
     padding-left: 15px;
     float: left;
-    color: rgba(127, 127, 127, 0.816);
+    color: rgba(161, 233, 46, 0.816);
     font-weight: bold;
 }
 
